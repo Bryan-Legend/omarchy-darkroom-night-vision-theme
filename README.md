@@ -62,11 +62,6 @@ folder has an installer for two of them:
 
 Remove them with `extras/install.sh uninstall`.
 
-## Windows
-
-There's a Windows 10/11 port in [`windows/`](windows/README.md): dark mode, a
-red accent, the wallpapers, and a Windows Terminal color scheme.
-
 ## Night-vision notes
 
 - **Keep your monitor dim.** A dim red screen protects night vision far better
