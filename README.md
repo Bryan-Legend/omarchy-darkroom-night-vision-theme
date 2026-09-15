@@ -62,6 +62,13 @@ folder has an installer for two of them:
 
 Remove them with `extras/install.sh uninstall`.
 
+### VS Code
+
+Omarchy switches VS Code themes through Marketplace extensions, and this one
+isn't published, so it isn't applied automatically. A matching red-only color
+theme lives in [`extras/vscode/`](extras/vscode/) with install steps. It's
+meant for OLED screens and dark rooms.
+
 ## Night-vision notes
 
 - **Keep your monitor dim.** A dim red screen protects night vision far better

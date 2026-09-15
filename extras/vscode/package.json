@@ -1,0 +1,16 @@
+{
+  "name": "darkroom-night-vision",
+  "displayName": "Darkroom Night Vision",
+  "description": "Red-only theme for dark rooms and dark-adapted eyes. Port of the Omarchy Darkroom Night Vision theme.",
+  "version": "1.0.0",
+  "publisher": "bryan-legend",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Bryan-Legend/omarchy-darkroom-night-vision-theme" },
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      { "label": "Darkroom Night Vision", "uiTheme": "vs-dark", "path": "./themes/darkroom-night-vision-color-theme.json" }
+    ]
+  }
+}
