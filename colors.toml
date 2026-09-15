@@ -1,0 +1,38 @@
+# Darkroom Night Vision
+# Red-only palette for darkrooms and dark-adapted eyes. Every color keeps its
+# green and blue channels at 00, so the screen only ever emits red light.
+# Hierarchy comes from brightness alone; nothing gets close to full white.
+mode = "dark"
+
+accent = "#d40000"
+selection = "#2e0000"
+muted = "#5c0000"
+
+background = "#000000"
+dark_background = "#050000"
+darker_background = "#000000"
+lighter_background = "#140000"
+
+foreground = "#a80000"
+dark_foreground = "#5c0000"
+light_foreground = "#960000"
+bright_foreground = "#cc0000"
+
+hyprland_active_border = "rgba(c00000ee) rgba(600000ee) 45deg"
+hyprland_inactive_border = "rgba(2a0000aa)"
+
+red = "#e00000"
+yellow = "#b80000"
+orange = "#c80000"
+green = "#9c0000"
+cyan = "#8c0000"
+blue = "#800000"
+magenta = "#ac0000"
+brown = "#460000"
+
+bright_red = "#ff0000"
+bright_yellow = "#dc0000"
+bright_green = "#c00000"
+bright_cyan = "#b00000"
+bright_blue = "#a40000"
+bright_magenta = "#cc0000"

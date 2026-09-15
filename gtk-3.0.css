@@ -1,0 +1,35 @@
+/* Darkroom Night Vision - GTK3 apps on Adwaita-dark. Red-only. */
+@define-color accent_color #d40000;
+@define-color accent_bg_color #8a0000;
+@define-color accent_fg_color #000000;
+@define-color destructive_color #e00000;
+@define-color destructive_bg_color #6e0000;
+@define-color destructive_fg_color #000000;
+@define-color success_color #9c0000;
+@define-color warning_color #b80000;
+@define-color error_color #e00000;
+@define-color window_bg_color #000000;
+@define-color window_fg_color #a80000;
+@define-color view_bg_color #000000;
+@define-color view_fg_color #a80000;
+@define-color headerbar_bg_color #0a0000;
+@define-color headerbar_fg_color #a80000;
+@define-color headerbar_border_color #2a0000;
+@define-color headerbar_backdrop_color #050000;
+@define-color sidebar_bg_color #050000;
+@define-color sidebar_fg_color #a80000;
+@define-color card_bg_color #140000;
+@define-color card_fg_color #a80000;
+@define-color dialog_bg_color #0a0000;
+@define-color dialog_fg_color #a80000;
+@define-color popover_bg_color #0a0000;
+@define-color popover_fg_color #a80000;
+@define-color theme_bg_color #000000;
+@define-color theme_fg_color #a80000;
+@define-color theme_base_color #000000;
+@define-color theme_text_color #a80000;
+@define-color theme_selected_bg_color #2e0000;
+@define-color theme_selected_fg_color #d40000;
+@define-color insensitive_fg_color #5c0000;
+@define-color borders #2a0000;
+* { -gtk-icon-style: symbolic; }

@@ -1,0 +1,23 @@
+0-vlt-laser-milky-way.png
+  "Straight to the Milky Way's heart" - VLT Yepun laser guide star aimed at the galactic centre.
+  Credit: G. Hüdepohl (atacamaphoto.com)/ESO
+  Source: https://www.eso.org/public/images/huedepohl-02/  (CC BY 4.0)
+  Modified: cropped to 16:9, converted to red-only.
+
+0-cosmic-cliffs.png
+  NIRCam Image of the "Cosmic Cliffs" in Carina (NGC 3324), James Webb Space Telescope.
+  Credit: NASA, ESA, CSA, and STScI
+  Source: https://esawebb.org/images/weic2205a/  (CC BY 4.0)
+  Modified: cropped to 16:9, red channel only, darkened.
+
+0-magellanic-clouds.png
+  "The VLT's Laser Guide Star" - Yepun's laser crossing the Milky Way, with the Large and Small Magellanic Clouds.
+  Credit: G. Hüdepohl (atacamaphoto.com)
+  Source: https://www.eso.org/public/images/gerd_huedepohl_2/  (CC BY 4.0)
+  Modified: cropped to 16:9, converted to red-only, contrast raised.
+
+00-pillars-of-creation-ccw.png
+  Pillars of Creation (M16, Eagle Nebula), James Webb Space Telescope NIRCam, 2022.
+  Credit: NASA, ESA, CSA, STScI; J. DePasquale, A. Koekemoer, A. Pagan (STScI)
+  Source: https://esawebb.org/images/weic2216b/  (CC BY 4.0)
+  Modified: rotated 90° counterclockwise, cropped to 16:9, red channel only.

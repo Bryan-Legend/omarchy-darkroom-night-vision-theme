@@ -1,0 +1,83 @@
+/* Darkroom Night Vision - libadwaita / GTK4 (Nautilus, GNOME apps).
+   Red-only: green and blue channels stay at 00. */
+:root {
+  --accent-color: #d40000;
+  --accent-bg-color: #8a0000;
+  --accent-fg-color: #000000;
+
+  --destructive-color: #e00000;
+  --destructive-bg-color: #6e0000;
+  --destructive-fg-color: #000000;
+  --success-color: #9c0000;
+  --success-bg-color: #4a0000;
+  --success-fg-color: #000000;
+  --warning-color: #b80000;
+  --warning-bg-color: #5c0000;
+  --warning-fg-color: #000000;
+  --error-color: #e00000;
+  --error-bg-color: #6e0000;
+  --error-fg-color: #000000;
+
+  --window-bg-color: #000000;
+  --window-fg-color: #a80000;
+  --view-bg-color: #000000;
+  --view-fg-color: #a80000;
+
+  --headerbar-bg-color: #0a0000;
+  --headerbar-fg-color: #a80000;
+  --headerbar-border-color: #2a0000;
+  --headerbar-backdrop-color: #050000;
+  --headerbar-shade-color: rgb(0 0 0 / 60%);
+  --headerbar-darker-shade-color: rgb(0 0 0 / 80%);
+
+  --sidebar-bg-color: #050000;
+  --sidebar-fg-color: #a80000;
+  --sidebar-backdrop-color: #030000;
+  --sidebar-border-color: #2a0000;
+  --sidebar-shade-color: rgb(0 0 0 / 60%);
+  --secondary-sidebar-bg-color: #050000;
+  --secondary-sidebar-fg-color: #a80000;
+  --secondary-sidebar-backdrop-color: #030000;
+  --secondary-sidebar-border-color: #2a0000;
+  --secondary-sidebar-shade-color: rgb(0 0 0 / 60%);
+
+  --card-bg-color: #140000;
+  --card-fg-color: #a80000;
+  --card-shade-color: rgb(0 0 0 / 60%);
+  --thumbnail-bg-color: #140000;
+  --thumbnail-fg-color: #a80000;
+  --dialog-bg-color: #0a0000;
+  --dialog-fg-color: #a80000;
+  --popover-bg-color: #0a0000;
+  --popover-fg-color: #a80000;
+  --popover-shade-color: rgb(0 0 0 / 60%);
+  --overview-bg-color: #050000;
+  --overview-fg-color: #a80000;
+  --active-toggle-bg-color: #2e0000;
+  --active-toggle-fg-color: #d40000;
+
+  --shade-color: rgb(0 0 0 / 60%);
+  --scrollbar-outline-color: rgb(0 0 0 / 50%);
+}
+
+/* Full-color icons (folders, file types) can't be recolored; ask for the
+   symbolic variants, which follow the red text color instead. */
+* { -gtk-icon-style: symbolic; }
+
+selection, *:selected { background-color: #2e0000; color: #d40000; }
+
+/* Folder/file icons and thumbnails are full-color images that CSS can't
+   recolor directly. Filter the whole file view instead: grayscale, then an
+   extreme sepia/hue/saturate push that drives green and blue below zero
+   (clamped to 0) while red stays proportional to the original brightness.
+   Everything inside is authored in grays so it lands on the right red:
+   white -> ~#a80000, #454545 -> ~#2e0000. */
+.nautilus-grid-view, .nautilus-list-view {
+  filter: grayscale(1) brightness(0.01) sepia(1) hue-rotate(-56deg) saturate(150) brightness(1.4);
+  color: #ffffff;
+}
+.nautilus-grid-view label, .nautilus-list-view label { color: #ffffff; }
+.nautilus-grid-view :selected, .nautilus-list-view :selected,
+.nautilus-grid-view gridview > child:selected, .nautilus-list-view columnview row:selected {
+  background-color: #454545;
+}

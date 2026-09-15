@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Turn Hyprland's screen shader red-only while the Omarchy screensaver is open,
+# but only when the Darkroom Night Vision theme is active. The screensaver's
+# text effects pick their own colors, so a theme alone can't make them red.
+
+SHADER="$HOME/.config/hypr/shaders/darkroom-red.glsl"
+THEME_NAME_FILE="$HOME/.local/state/omarchy/current/theme.name"
+SOCKET="$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock"
+active=0
+
+set_shader() {
+  hyprctl eval "hl.config({ decoration = { screen_shader = \"$1\" } })" >/dev/null
+}
+
+screensaver_open() {
+  hyprctl clients -j | jq -e 'any(.[]; .class == "org.omarchy.screensaver")' >/dev/null
+}
+
+sync_shader() {
+  if screensaver_open && [[ $(<"$THEME_NAME_FILE") == darkroom-night-vision ]]; then
+    ((active)) || { set_shader "$SHADER"; active=1; }
+  elif ((active)); then
+    set_shader ""
+    active=0
+  fi
+}
+
+sync_shader
+while IFS= read -r line; do
+  case $line in
+  openwindow\>\>* | closewindow\>\>*) sync_shader ;;
+  esac
+done < <(socat -U - "UNIX-CONNECT:$SOCKET")
