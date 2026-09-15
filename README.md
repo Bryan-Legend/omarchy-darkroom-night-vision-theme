@@ -14,6 +14,11 @@ applies that rule to the whole desktop: every color keeps its green and blue
 channels at `00`, so the display only ever emits red light. Hierarchy comes
 from brightness alone, and nothing gets close to full white.
 
+**It's also great on OLED screens.** Backgrounds are true black (`#000000`),
+so those pixels switch off entirely, which saves power and looks inky. And
+because nothing lights the blue subpixels, the ones that wear out fastest on
+most OLED panels, the theme is gentle on the panel too.
+
 ## Install
 
 ```bash
