@@ -36,6 +36,9 @@ Or open the Omarchy menu (`Super + Alt + Space`) and choose
 - **Wallpapers** — four astronomy photographs converted to red-only (verified:
   zero green and blue), plus a faint safelight glow and plain black. The JWST
   *Pillars of Creation* is the default.
+- **VS Code** — Omarchy's generated theme with the palette filled in, except
+  that inactive tabs, panel titles, activity bar icons and unfocused title bars use
+  `#800000` instead of the muted `#5c0000`, which was too dark.
 - **Icons** — `Yaru-red-dark`.
 - **Lock screen and boot logo** in red.
 
@@ -61,13 +64,6 @@ folder has an installer for two of them:
   again afterwards. It starts at login via `~/.config/hypr/autostart.lua`.
 
 Remove them with `extras/install.sh uninstall`.
-
-### VS Code
-
-Omarchy switches VS Code themes through Marketplace extensions, and this one
-isn't published, so it isn't applied automatically. A matching red-only color
-theme lives in [`extras/vscode/`](extras/vscode/) with install steps. It's
-meant for OLED screens and dark rooms.
 
 ## Night-vision notes
 
