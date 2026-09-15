@@ -1,5 +1,7 @@
 # Darkroom Night Vision
 
+> *Live like you're driving the Keck telescopes.*
+
 A red-only theme for [Omarchy](https://omarchy.org), built for dark rooms and
 dark-adapted eyes.
 
