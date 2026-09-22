@@ -39,9 +39,10 @@ Or open the Omarchy menu (`Super + Alt + Space`) and choose
 - **VS Code** — Omarchy's generated theme with the palette filled in, except
   that inactive tabs, panel titles, activity bar icons and unfocused title bars use
   `#800000` instead of the muted `#5c0000`, which was too dark.
-  Selections are inverted (black on red) in lists, menus, the command palette
-  and the terminal. The editor's selection is a solid `#700000` instead,
-  because VS Code only applies a selected-text color in high-contrast themes.
+  It's a high-contrast theme (`"type": "hc"`) so that selections can be
+  inverted to black on red everywhere, including the editor: VS Code only
+  applies a selected-text color in high-contrast themes. The editor's
+  selection is only inverted if VS Code loads the theme as `hc-black`.
 - **Icons** — `Yaru-red-dark`.
 - **Lock screen and boot logo** in red.
 
