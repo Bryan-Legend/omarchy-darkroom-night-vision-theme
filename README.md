@@ -40,7 +40,7 @@ Or open the Omarchy menu (`Super + Alt + Space`) and choose
   that inactive tabs, panel titles, activity bar icons and unfocused title bars use
   `#800000` instead of the muted `#5c0000`, which was too dark.
   Selections are inverted (black on red) in lists, menus, the command palette
-  and the terminal. The editor's selection is a solid `#5c0000` instead,
+  and the terminal. The editor's selection is a solid `#700000` instead,
   because VS Code only applies a selected-text color in high-contrast themes.
 - **Icons** — `Yaru-red-dark`.
 - **Lock screen and boot logo** in red.
