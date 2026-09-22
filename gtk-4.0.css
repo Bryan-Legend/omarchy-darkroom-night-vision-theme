@@ -64,14 +64,14 @@
    symbolic variants, which follow the red text color instead. */
 * { -gtk-icon-style: symbolic; }
 
-selection, *:selected { background-color: #2e0000; color: #d40000; }
+selection, *:selected { background-color: #a80000; color: #000000; }
 
 /* Folder/file icons and thumbnails are full-color images that CSS can't
    recolor directly. Filter the whole file view instead: grayscale, then an
    extreme sepia/hue/saturate push that drives green and blue below zero
    (clamped to 0) while red stays proportional to the original brightness.
    Everything inside is authored in grays so it lands on the right red:
-   white -> ~#a80000, #454545 -> ~#2e0000. */
+   white -> ~#a80000, black stays black. Selected rows are inverted. */
 .nautilus-grid-view, .nautilus-list-view {
   filter: grayscale(1) brightness(0.01) sepia(1) hue-rotate(-56deg) saturate(150) brightness(1.4);
   color: #ffffff;
@@ -79,5 +79,6 @@ selection, *:selected { background-color: #2e0000; color: #d40000; }
 .nautilus-grid-view label, .nautilus-list-view label { color: #ffffff; }
 .nautilus-grid-view :selected, .nautilus-list-view :selected,
 .nautilus-grid-view gridview > child:selected, .nautilus-list-view columnview row:selected {
-  background-color: #454545;
+  background-color: #ffffff;
 }
+.nautilus-grid-view :selected label, .nautilus-list-view :selected label { color: #000000; }
