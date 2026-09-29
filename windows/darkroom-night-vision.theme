@@ -1,0 +1,60 @@
+; Darkroom Night Vision - Windows contrast theme
+; Red-only: every color keeps its green and blue channels at 0.
+; Double-click to apply, or pick it under Settings > Accessibility > Contrast themes.
+
+[Theme]
+DisplayName=Darkroom Night Vision
+SetLogonBackground=0
+
+[Control Panel\Colors]
+; Background, text, links, inactive text
+Background=0 0 0
+Window=0 0 0
+WindowText=199 0 0
+HotTrackingColor=228 0 0
+GrayText=160 0 0
+; Selected text is full red on dark red
+Hilight=72 0 0
+HilightText=255 0 0
+MenuHilight=72 0 0
+; Buttons
+ButtonFace=0 0 0
+ButtonText=228 0 0
+ButtonAlternateFace=91 0 0
+ButtonShadow=91 0 0
+ButtonHilight=160 0 0
+ButtonDkShadow=199 0 0
+ButtonLight=199 0 0
+; Title bars and borders
+ActiveTitle=55 0 0
+GradientActiveTitle=55 0 0
+TitleText=228 0 0
+InactiveTitle=24 0 0
+GradientInactiveTitle=24 0 0
+InactiveTitleText=160 0 0
+ActiveBorder=160 0 0
+InactiveBorder=55 0 0
+WindowFrame=160 0 0
+; Menus, tooltips, scrollbars
+Menu=0 0 0
+MenuBar=0 0 0
+MenuText=199 0 0
+InfoWindow=0 0 0
+InfoText=199 0 0
+Scrollbar=0 0 0
+AppWorkspace=0 0 0
+
+[Control Panel\Desktop]
+Wallpaper=
+TileWallpaper=0
+WallpaperStyle=10
+Pattern=
+
+[VisualStyles]
+Path=%SystemRoot%\resources\themes\Aero\AeroLite.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+HighContrast=3
+
+[MasterThemeSelector]
+MTSM=RJSPBS

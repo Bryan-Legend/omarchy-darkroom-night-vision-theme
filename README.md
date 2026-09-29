@@ -69,6 +69,18 @@ folder has an installer for two of them:
 
 Remove them with `extras/install.sh uninstall`.
 
+## Windows
+
+`windows/darkroom-night-vision.theme` is a Windows 11 contrast theme in the
+same palette. Double-click it to apply, or pick it later under
+**Settings › Accessibility › Contrast themes**. Windows then draws Explorer,
+Settings, menus and classic apps in red on black. App icons, pictures and web
+pages keep their real colors.
+
+VS Code switches to its own high-contrast theme while a contrast theme is on.
+To keep this one, set `"workbench.preferredHighContrastColorTheme":
+"Darkroom Night Vision"`.
+
 ## Night-vision notes
 
 - **Keep your monitor dim.** A dim red screen protects night vision far better
