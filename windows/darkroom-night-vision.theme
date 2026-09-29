@@ -45,7 +45,7 @@ Scrollbar=0 0 0
 AppWorkspace=0 0 0
 
 [Control Panel\Desktop]
-Wallpaper=
+Wallpaper=%LOCALAPPDATA%\Microsoft\Windows\Themes\DarkroomNightVision\pillars-of-creation.png
 TileWallpaper=0
 WallpaperStyle=10
 Pattern=

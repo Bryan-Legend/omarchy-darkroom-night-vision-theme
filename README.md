@@ -72,8 +72,17 @@ Remove them with `extras/install.sh uninstall`.
 ## Windows
 
 `windows/darkroom-night-vision.theme` is a Windows 11 contrast theme in the
-same palette. Double-click it to apply, or pick it later under
-**Settings › Accessibility › Contrast themes**. Windows then draws Explorer,
+same palette, with the *Pillars of Creation* wallpaper. Install it from a
+clone of this repo:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File windows\install.ps1
+```
+
+The script copies the wallpaper into your Windows themes folder and applies
+the theme. Afterwards you can switch back to it under
+**Settings › Accessibility › Contrast themes**. Double-clicking the `.theme`
+file also works, but without the wallpaper. Windows then draws Explorer,
 Settings, menus and classic apps in red on black. App icons, pictures and web
 pages keep their real colors.
 
