@@ -32,13 +32,13 @@ Or open the Omarchy menu (`Super + Alt + Space`) and choose
 
 - **Palette** — terminals, btop, Neovim, the Omarchy shell, Hyprland borders,
   and every other app Omarchy themes from `colors.toml`, all in reds from
-  `#140000` to `#ff0000`.
+  `#370000` to `#ff0000`.
 - **Wallpapers** — four astronomy photographs converted to red-only (verified:
   zero green and blue), plus a faint safelight glow and plain black. The JWST
   *Pillars of Creation* is the default.
-- **VS Code** — Omarchy's generated theme with the palette filled in, except
-  that inactive tabs, panel titles, activity bar icons and unfocused title bars use
-  `#800000` instead of the muted `#5c0000`, which was too dark.
+- **VS Code** — Omarchy's generated theme with the palette filled in. Inactive
+  tabs, panel titles, activity bar icons and unfocused title bars use `#a90000`,
+  a step above the muted `#a00000`.
   It's a high-contrast theme (`"type": "hc"`) so that selections can be
   inverted to black on red everywhere, including the editor: VS Code only
   applies a selected-text color in high-contrast themes. The editor's
