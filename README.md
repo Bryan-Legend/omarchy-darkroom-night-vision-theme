@@ -90,6 +90,19 @@ VS Code switches to its own high-contrast theme while a contrast theme is on.
 To keep this one, set `"workbench.preferredHighContrastColorTheme":
 "Darkroom Night Vision"`.
 
+## Chrome
+
+`chrome/` is a Google Chrome theme in the same palette: black window bar,
+tabs, toolbar and new-tab page, with red text and icons. Chrome only loads
+local themes by hand:
+
+1. Open `chrome://extensions` and switch on **Developer mode**.
+2. Click **Load unpacked** and choose the `chrome` folder from a clone of this
+   repo.
+
+The active tab stands out from the others by its brighter text alone.
+Incognito windows keep Chrome's own colors.
+
 ## Night-vision notes
 
 - **Keep your monitor dim.** A dim red screen protects night vision far better

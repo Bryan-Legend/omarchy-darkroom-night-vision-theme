@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Darkroom Night Vision",
+  "description": "Red-only theme for dark rooms and dark-adapted eyes. Every color keeps green and blue at 0.",
+  "version": "1.0",
+  "theme": {
+    "colors": {
+      "frame": [0, 0, 0],
+      "frame_inactive": [0, 0, 0],
+      "background_tab": [0, 0, 0],
+      "background_tab_inactive": [0, 0, 0],
+      "toolbar": [0, 0, 0],
+      "toolbar_text": [199, 0, 0],
+      "toolbar_button_icon": [199, 0, 0],
+      "tab_text": [228, 0, 0],
+      "tab_background_text": [160, 0, 0],
+      "tab_background_text_inactive": [160, 0, 0],
+      "bookmark_text": [199, 0, 0],
+      "omnibox_background": [24, 0, 0],
+      "omnibox_text": [228, 0, 0],
+      "ntp_background": [0, 0, 0],
+      "ntp_text": [199, 0, 0],
+      "ntp_link": [228, 0, 0],
+      "ntp_header": [55, 0, 0],
+      "button_background": [0, 0, 0]
+    }
+  }
+}
