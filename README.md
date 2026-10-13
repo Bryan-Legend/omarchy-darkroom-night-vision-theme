@@ -33,9 +33,10 @@ Or open the Omarchy menu (`Super + Alt + Space`) and choose
 - **Palette** — terminals, btop, Neovim, the Omarchy shell, Hyprland borders,
   and every other app Omarchy themes from `colors.toml`, all in reds from
   `#370000` to `#ff0000`.
-- **Wallpapers** — four astronomy photographs converted to red-only (verified:
-  zero green and blue), plus a faint safelight glow and plain black. The JWST
-  *Pillars of Creation* is the default.
+- **Wallpapers** — four astronomy photographs converted to red-only, plus a
+  faint safelight glow and plain black. The JWST *Pillars of Creation* is the
+  default. They're stored as lossy WebP to keep the download small, which
+  lets a little green and blue back in around the brightest stars.
 - **VS Code** — Omarchy's generated theme with the palette filled in. Inactive
   tabs, panel titles, activity bar icons and unfocused title bars use `#a90000`,
   a step above the muted `#a00000`.
